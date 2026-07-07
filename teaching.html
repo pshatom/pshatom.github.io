@@ -14,7 +14,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Prince Sharma - Research</title>
+    <title>Teaching</title>
     <!-- Add Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -36,12 +36,12 @@
             top: 0;
             z-index: 100;
         }
-        
+
         header h1 {
             font-size: 1.5em;
             font-weight: bold;
         }
-        
+
         nav a {
             margin-left: 1.5em;
             text-decoration: none;
@@ -49,12 +49,11 @@
             font-weight: 500;
             transition: color 0.3s;
         }
-        
+
         nav a:hover {
             color: #ff6200;
         }
 
-        /* Custom colors for specific platforms */
         .fa-github { color: #24292e; }
         .fa-linkedin { color: #0077b5; }
         .fa-researchgate { color: #00ccbb; }
@@ -67,7 +66,7 @@
             margin: 2em auto;
             padding: 0 2em;
         }
-        
+
         .hero {
             background: #f5f7fa;
             color: #0a4d8c;
@@ -76,13 +75,13 @@
             margin-bottom: 3em;
             border-radius: 10px;
         }
-        
+
         .hero h2 {
             font-size: 2em;
             margin-bottom: 0.5em;
             color: #0a4d8c;
         }
-        
+
         .hero p {
             font-size: 1.1em;
             max-width: 800px;
@@ -90,101 +89,104 @@
             line-height: 1.7;
             color: #0a4d8c;
         }
-        
+
         section {
             margin-bottom: 4em;
         }
-        
+
         section h3 {
             color: #0a4d8c;
             font-size: 1.5em;
             margin-bottom: 0.5em;
         }
-        
+
         section p {
             line-height: 1.7;
             text-align: justify;
         }
-        
+
         section ul {
             line-height: 1.7;
             list-style-type: disc;
             margin-left: 2em;
             text-align: justify;
         }
-        
-        .research-summary {
-            background: #f9f9f9;
-            padding: 2em;
-            border-radius: 8px;
-            margin-bottom: 3em;
-        }
-        
+
         h2, h3 {
             color: #0a4d8c;
             margin-bottom: 0.8em;
         }
-        
-        h2 {
-            font-size: 1.8em;
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-        }
-        
-        .project {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 3em;
-            padding-bottom: 2em;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .project:last-child {
-            border-bottom: none;
-        }
-        
-        .project-content {
-            display: flex;
-            flex-direction: row;
-            gap: 2em;
+
+        .course-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5em 2em;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
             margin-bottom: 1.5em;
         }
-        
-        .project-text {
-            flex: 1;
-        }
-        
-        .project-image {
-            flex: 1;
-            max-width: 50%;
-        }
-        
-        .project-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .key-findings {
-            background: #f0f5fa;
-            padding: 1.5em;
-            border-radius: 6px;
-            width: 100%;
-        }
-        
-        .key-findings h4 {
+
+        .course-card h4 {
             color: #0a4d8c;
+            font-size: 1.2em;
+            margin-bottom: 0.3em;
+        }
+
+        .course-card .term {
+            display: inline-block;
+            background: #f0f5fa;
+            color: #0a4d8c;
+            font-weight: 600;
+            font-size: 0.85em;
+            padding: 0.3em 0.8em;
+            border-radius: 20px;
             margin-bottom: 0.8em;
         }
-        
-        .projects-heading {
-            margin-top: 2em;
+
+        .placeholder-card {
+            background: #f9f9f9;
+            border: 1px dashed #c3d2e0;
+            padding: 1.5em;
+            border-radius: 8px;
             margin-bottom: 1.5em;
+        }
+
+        .placeholder-card p {
+            margin: 0;
+            color: #555;
+            font-style: italic;
+        }
+
+        .philosophy-card {
+            background: #f0f5fa;
+            border-radius: 8px;
+            padding: 1.5em 2em;
+        }
+
+        .philosophy-card p {
+            margin-bottom: 1em;
+        }
+
+        .philosophy-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 0 1em;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 1em;
+            }
+
+            nav a {
+                margin: 0 0.5em;
+            }
         }
 
         /* Bottom Bar */
@@ -212,7 +214,7 @@
             margin-bottom: 0.3em;
             text-align: center;
         }
-        
+
         .bottom-bar p {
             font-size: 0.9em;
             color: #333;
@@ -220,7 +222,6 @@
             margin-bottom: 0.8em;
         }
 
-        /* Bottom bar social links */
         .bottom-bar .social-links {
             display: flex;
             flex-direction: row;
@@ -228,12 +229,12 @@
             flex-wrap: wrap;
             gap: 10px;
         }
-        
+
         .bottom-bar .social-links a {
             margin: 5px;
             display: inline-block;
         }
-        
+
         .bottom-bar .social-links i {
             font-size: 22px;
             transition: transform 0.2s ease-in-out;
@@ -242,34 +243,6 @@
 
         .bottom-bar .social-links i:hover {
             transform: scale(1.2);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            main {
-                padding: 0 1em;
-            }
-            
-            .project-content {
-                flex-direction: column;
-            }
-            
-            .project-image {
-                max-width: 100%;
-            }
-            
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav {
-                margin-top: 1em;
-            }
-            
-            nav a {
-                margin: 0 0.5em;
-            }
         }
     </style>
 </head>
@@ -288,63 +261,37 @@
             <a href="data.html">Data</a>
         </nav>
     </header>
-    
-
 
     <main>
 
- <section class="research">
-        <h2>News and Achievements</h2>
-        <section>
-            <h3>News</h3>
-            <ul>
-                <li><a href="https://www.nature.com/articles/s41467-026-71170-z" target="_blank">
-<strong>Nature Communications</strong> publishes "Direct observation of surface local chemical ordering in CoCrFeMnNi high-entropy alloys," by <span class="star">Lauren Kim*</span>, Prince Sharma, Che-Wei Tsai, E-Wen Huang, Peter K. Liaw, Jien-Wei Yeh, Ganesh Balasubramanian & <span class="star">TeYu Chien*</span>, 2026.
-</a></li>
-                <li>Recognised as Exceptional Reviewer by Materials, MDPI. - 08/2025</li>
-                <li>Appointed to the Extended Advisory Board of Carbon Journal. - 08/2025</li>
-                <li>Appointed to the Early Career Editorial Board of Condensed Matter Journal. - 08/2025</li>
-                <li>Received "Special Mention" distinction in the 2025 Carbon Journal Prize for research in 2D MXene based materials. - 22/07/2025 </li>
-                <li><a><strong>Acta Materialia</strong> publishes "Influence of Isoelectronic Mass Modulation on Phonon Decay and Transport in Layered Pnictogen-Carbon Systems," a study by Sharma, Singh and Balasubramanian, on 14/06/2025.</a></li>
-             <img src="GA/GA1.jpg" alt="Graphical Abstract" style="max-width: 300px; height: auto; display: block; margin: 1em 0;">
-            </ul>
-        </section>
-        <section>
-            <h3>Media</h3>
-            <ul>
-                <li><a href="https://engineering.lehigh.edu/news/article/prince-sharma-seeing-wider-picture">Prince Sharma: Seeing the wider picture</a></li>
-                <li><a href="https://link.growkudos.com/1hpdt8alszk">Ultrafast synthesis of amorphous high entropy alloy for advanced sustainable applications</a></li>
-                <li><a href="https://wordpress.lehigh.edu/gsrs/2024/12/11/mixing-metals-to-make-mighty-materials-the-magic-of-atomic-disorder-and-entropy/">Mixing Metals to Make Mighty Materials: The Magic of Atomic Disorder and Entropy</a></li>
-                <li><a href="https://philadelphia-stle.org/lehigh-university-graduate-student-awarded-philadelphia-stle-scholarship-4/">Lehigh University Graduate Student Awarded Philadelphia STLE Scholarship</a></li>
-            <img src="cover.jpg" alt="Journal Cover" style="max-width: 300px; height: auto; display: block; margin: 1em 0;">
-            </ul>
-        </section>
-        <section>
-            <h3>Invited Talks</h3>
-            <ul>
-                <li>Examining Phonon Transport in High Entropy Oxides: An Advanced Thermal Barrier Coating Material, Host: Prof. Sandip Kumar Saha, Department of Mechanical Engineering, Indian Institute of Technology Bombay, India.</li>
-            </ul>
-        </section>
-<section>
-    <h3>Achievements</h3>
-    <ul>
-        <li> Appointed to the Extended Advisory Board of Carbon Journal.</li>
-        <li> Received "Special Mention" distinction in the 2025 Carbon Journal Prize for research in 2D MXene based materials.</li>
-        <li>STLE Philadelphia Scholarship 2023 Award for research in two-dimensional materials.</li>
-        <li>Doctoral Travel Grants for Global Opportunities Award from Lehigh University for international travel.</li>
-        <li>DFT Workshop - "Moving ions with VASP" Selected in top 100 candidates to participate.</li>
-        <li>Lehigh University Fellowship for PhD studies.</li>
-        <li>Rossin Doctoral Fellow 2022-2023 for PhD studies.</li>
-        <li>Kanai and Bibha Mukherjee Fund for travel to United States.</li>
-        <li>Nominated for UNESCO-POLAND Co-Sponsored Engineering Fellowship 2020.</li>
-        <li>JENESYS Scholarship Award 2019, Ministry of Foreign Affairs, Government of Japan.</li>
-        <li>All India Rank-53, Graduate Aptitude Test in Engineering 2018.</li>
-        <li>Winner, Inter School Chess Championship 2009.</li>
-    </ul>
-</section>
-    </section>
+        <div class="hero">
+            <h2>Teaching</h2>
+        </div>
 
+        <section>
+            <h3>💡 Teaching Philosophy</h3>
+            <div class="philosophy-card">
+                <p>I genuinely enjoy teaching and mentoring — for me, the best classroom moments are the ones where a student works out an idea for themselves rather than just being handed it. I like to start from a real engineering problem (why did this alloy fail, why does a reactor material change under irradiation) before turning to the underlying theory, so the physics has something concrete to attach to.</p>
+                <p>Given my background in computational materials science, I also try to bring hands-on computational experience into my courses — having students run their own DFT and MD calculations rather than just reading about them — since that mirrors how the work is actually done in research and industry. Every class is a little different, and I like adapting as I go based on how students are engaging with the material.</p>
+            </div>
+        </section>
 
+        <section>
+            <h3>📖 Current Course</h3>
+            <div class="course-card">
+                <span class="term">Fall 2026 semester</span>
+                <h4>Nuclear Materials — ME 4203 / ME 5203 (Fall 2026)</h4>
+            </div>
+        </section>
+
+        <section>
+            <h3>🗂️Upcoming Courses</h3>
+            <div class="placeholder-card">
+                <p>Additional courses and syllabi will be listed here as they are scheduled.</p>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Bottom Bar for all devices -->
     <div class="bottom-bar">
@@ -367,7 +314,7 @@
         window.addEventListener('scroll', function() {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             let bottomBar = document.querySelector('.bottom-bar');
-            
+
             if (scrollTop > scrollThreshold) {
                 if (scrollTop > lastScrollTop) {
                     bottomBar.classList.add('show');
@@ -377,11 +324,10 @@
             } else {
                 bottomBar.classList.remove('show');
             }
-            
+
             lastScrollTop = scrollTop;
         });
     </script>
 
-    </main>
 </body>
 </html>
